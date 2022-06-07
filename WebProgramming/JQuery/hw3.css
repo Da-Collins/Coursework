@@ -1,0 +1,38 @@
+.side{
+    float:right;
+    text-align: right;
+}
+
+.entree{
+    float: left;
+}
+
+img{
+    max-width: 100px;
+    height: auto;
+}
+
+section{
+    background-color:gray;
+}
+
+.but{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+}
+
+#submit{
+    background: lightcoral;
+    color: white;  
+    border-style: outset;   
+    border-color:black;   
+    height: 50px;   
+    width: 100px;   
+    font: sans-serif;   
+    text-shadow:none;   
+}
+
+.error{
+    color: red;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW2</title>
+    <link rel="stylesheet" href="hw6.css">
+    <script src="hw6.js"></script>
+</head>
+<h1>Chez 326</h1>
+<p>Please choose one entree and three side dish selections</p>
+<form onsubmit="validate()">
+    <section>
+        <h2>Customer Name</h2>
+        <p>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" required><br>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" required>
+        </p>
+    </section>
+    <div class="entree">
+        <h2>Entrees</h2>
+        <div>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Chicken_Fried_Steak.jpg/600px-Chicken_Fried_Steak.jpg" alt="chicken fried steak">
+            <input type="radio" name="entree" id="chickSteak">
+            <label for="chickSteak">Chicken-Fried Steak</label><br>
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Ribeye-MCB-MaggieO.jpg/440px-Ribeye-MCB-MaggieO.jpg" alt="ribeye steak">
+            <input type="radio" name="entree" id="ribSteak">
+            <label for="ribSteak">Ribeye Steak</label>
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/BLT_sandwich_%281%29.jpg" alt="blt">
+            <input type="radio" name="entree" id="blt">
+            <label for="blt">Bacon Lettuce & Tomato Sandwhich</label>
+        </div>
+    </div>
+    <div class="side">
+        <h2>Side Dishes</h2>
+        <p>Select three side dishes.</p>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Skillet_cornbread_%28cropped%29.jpg" alt="cornbread">
+            <label for="cornBread">Corn Bread:</label>
+            <input type="checkbox" name="side" id="cornBread">
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Creamed_corn.jpg/500px-Creamed_corn.jpg" alt="creamedcorn">
+            <label for="creamedCorn">Creamed Corn:</label>
+            <input type="checkbox" name="side" id="creamedCorn">
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Heaps_of_beans.jpg/440px-Heaps_of_beans.jpg" alt="greenbeans">
+            <label for="greenBeans">Green Beans:</label>
+            <input type="checkbox" name="side" id="greenBeans">
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/BakedBeansAndEggOnToast.jpg/440px-BakedBeansAndEggOnToast.jpg" alt="baked beans">
+            <label for="bakedBeans">Baked Beans:</label>
+            <input type="checkbox" name="side" id="bakedBeans">
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/MashedPotatoes.jpg/1200px-MashedPotatoes.jpg" alt="mashed potatos">
+            <label for="mashedPotatos">Mashed Potatos:</label>
+            <input type="checkbox" name="side" id="mashedPotatos">
+        </div>
+        
+    </div>
+    <div class="but">
+        <input id="submit" type="submit">
+    </div>
+</form>
+</html>
